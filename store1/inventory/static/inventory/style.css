@@ -27,6 +27,8 @@ body{
         height: 300px;
         border-radius: 5px;
         background-color: white;
+        position: static;
+        margin-top: 20px;
     }
     .item h3{
         display: inline;

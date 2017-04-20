@@ -5,11 +5,6 @@
         <title>View Inventory</title>
     </head>
     <body>
-        <div class="navigation">
-            <a href="">Home</a>
-            <a href="">Store</a>
-            <a href="">Other Link</a>
-        </div>
         {% for item in item_list %}
         <div class="item">
             <h3>{{ item.item_name }}</h3><span>{{ item.stock }} remaining</span>
