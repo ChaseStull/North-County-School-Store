@@ -1,0 +1,25 @@
+<html>
+    <head>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'inventory/style.css' %}">
+        <title>Item: {{ item.item_name }}</title>
+    </head>
+    <body>
+        <div class="navigation">
+            <a href="">Home</a>
+            <a href="">Store</a>
+            <a href="">Other Link</a>
+        </div>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+<h1>{{ item.item_name }}</h1>
+<h4>Items in stock: {{ item.stock }}</h4>
+<img src="{{ item.image }}">
