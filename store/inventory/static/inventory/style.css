@@ -1,6 +1,7 @@
 body{
     margin: 0;
-    background-color: #ebebeb;
+    background-color: #bbbbbb;
+    break-before: page;
 }
 @media screen and (min-width: 769px) {
     .navigation {
@@ -24,13 +25,29 @@ body{
     .item{
         display: inline-block;
         width: 300px;
-        height: 300px;
+        min-height: 300px;
+        height: 400px;
         border-radius: 5px;
         background-color: white;
-        position: static;
-        margin-top: 20px;
+        position: inherit;
+        margin-top: 10px;
+        margin-left: 5px;
+        border: 2px solid transparent;
+    }
+    .item:hover{
+        border: 2px solid #bf1d32;
     }
     .item h3{
         display: inline;
+    }
+    .item img{
+        height: auto;
+        max-height: 300px;
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+    .item span{
+        float: right;
     }
 }
