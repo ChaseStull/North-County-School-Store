@@ -6,19 +6,24 @@
     </head>
     <body>
         <div class="navigation">
-            <a href="">Help Me</a>
-            <a href="">Help Me</a>
-            <a href="">Help Me</a>
-            <a href="">Help Me</a>
+            <a href="">Home</a>
+            <a href="">Order</a>
+            <a href="">My Cart</a>
+            <a href="">Account Options</a>
+        </div>
+        <div class='featured-item'>
+
         </div>
         {% for item in item_list %}
-        <div class="item">
-            <h3>{{ item.item_name }}</h3><span>{{ item.stock }} remaining</span>
-            <img src="{{ item.image}}" alt="Image of {{ item.item_name }}">
-            <p>
-                {{ item.description }}
-            </p>
-        </div>
+        <a href="./{{ item.item_name }}" style="width: auto; height: auto; background-color: transparent; ">
+            <div class="item">
+                <h3>{{ item.item_name }}</h3><span>{{ item.stock }} remaining</span>
+                <img src="" alt="Image of {{ item.item_name }}">
+                <p>
+                    {{ item.description }}
+                </p>
+            </div>
+        </a>
         {% endfor %}
     </body>
 </html>

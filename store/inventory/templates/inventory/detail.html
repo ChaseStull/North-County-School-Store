@@ -10,6 +10,10 @@
             <a href="">Store</a>
             <a href="">Other Link</a>
         </div>
+        <div class="featured-item">
+            <h1>{{ item.item_name }}</h1>
+            <h4>Items in stock: {{ item.stock }}</h4>
+        </div>
     </body>
 </html>
 
@@ -19,7 +23,3 @@
 
 
 
-
-<h1>{{ item.item_name }}</h1>
-<h4>Items in stock: {{ item.stock }}</h4>
-<img src="{{ item.image }}">
