@@ -8,3 +8,11 @@ class Item(models.Model):
 
     def __str__(self):
         return self.item_name
+
+
+class storeuser(models.Model):
+    username = models.CharField(max_length=100)
+    password = models.CharField(max_length=2000)
+
+    def __str__(self):
+        return self.username

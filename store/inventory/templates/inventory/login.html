@@ -1,0 +1,17 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>NCHS | Login</title>
+    </head>
+    <body>
+        <form action="/login/" method="post">
+            {% csrf_token %}
+            {{ form }}
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password">
+            <label for="password_confirm">Confirm your password</label>
+            <input id="password_confirm" name="password" type="password">
+            <input type="submit" value="Login">
+        </form>
+    </body>
+</html>
